@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine 						
+FROM java:8 						
 COPY target/*.jar /app.jar					
 CMD ["--server.port=8084"]			
 EXPOSE 8084							
